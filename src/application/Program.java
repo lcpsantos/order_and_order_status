@@ -31,7 +31,7 @@ public class Program {
         Client client = new Client(name, email, birthDate);
 
         System.out.println("Enter order data:");
-        System.out.print("Status: ");
+        System.out.print("Report Status 1-PENDING_PAYMENT, 2-PROCESSING, 3-SHIPPED, 4-DELIVERED: ");
         int status = sc.nextInt();
 
         Order order = new Order(new Date(), OrderStatus.values()[status], client);

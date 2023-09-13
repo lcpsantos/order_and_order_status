@@ -13,4 +13,8 @@ public enum OrderStatus {
         this.code = code;
         this.description = description;
     }
+
+    public String getDescription() {
+        return this.description;
+    }
 }
