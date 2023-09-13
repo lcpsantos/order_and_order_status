@@ -32,10 +32,9 @@ public class Program {
 
         System.out.println("Enter order data:");
         System.out.print("Status: ");
-        String status = sc.nextLine();
-        OrderStatus orderStatus = OrderStatus.valueOf(sc.next());
+        int status = sc.nextInt();
 
-        Order order = new Order(new Date(), orderStatus, client);
+        Order order = new Order(new Date(), OrderStatus.values()[status], client);
 
         System.out.print("How many items to this order? ");
         int n = sc.nextInt();
